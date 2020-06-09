@@ -30,6 +30,22 @@ a {
   padding: 0;
 }
 
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  outline: 2px solid tomato;
+  background-color: #ffffff;
+}
+
+.container.main {
+  margin-top: 94px;
+  margin-bottom: 94px;
+}
+
 /* Логотип */
 .logo {
   color: var(--accent-color);
@@ -65,16 +81,6 @@ a {
 
 .auth-nav .link {
   color: var(--primary-text-color);
-}
-
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-
-  outline: 2px solid tomato;
 }
 
 /* Подвал */
@@ -153,13 +159,8 @@ b {
 }
 
 /* Особенности */
-.features {
-  margin-top: 94px;
-  margin-bottom: 94px;
-}
-
 .hidden-title {
-  color: transparent;
+  display: none;
   margin: 0;
 }
 
@@ -183,19 +184,16 @@ b {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
-}
 
-.features .text {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-/* Чем мы занимаемся */
-.activity .primary-title {
   margin-top: 0;
   margin-bottom: 50px;
 }
 
+.features .text {
+  margin: 0;
+}
+
+/* Чем мы занимаемся */
 .activity .contrast-title {
   font-weight: 700;
   font-size: 14px;
@@ -209,12 +207,31 @@ b {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.team .container {
+  background-color: #f5f4fa;
+}
+
+.photo {
+  margin-bottom: 30px;
 }
 
 .team .member {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
+
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.profession {
+  margin-top: 0;
+  margin-bottom: 16px;
 }
 
 .team a:hover,
