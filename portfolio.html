@@ -17,9 +17,9 @@
 
   <body>
     <!-- Шапка сайта -->
-    <header>
-      <div class="container">
-        <nav>
+    <header class="page-header">
+      <div class="container header">
+        <nav class="navigation">
           <!-- Логотип -->
           <a class="logo" href="./index.html" lang="en"
             >Web
@@ -27,53 +27,64 @@
           </a>
 
           <ul class="list site-nav">
-            <li>
+            <li class="site-nav-item">
               <a class="link" href="./index.html">Студия</a>
             </li>
-            <li>
+            <li class="site-nav-item">
               <a class="link curent" href="./portfolio.html">Портфолио</a>
             </li>
-            <li>
+            <li class="site-nav-item">
               <a class="link" href="">Контакты</a>
             </li>
           </ul>
         </nav>
         <ul class="list contacts">
-          <li>
+          <li class="contacts-item">
             <a class="link" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
             >
           </li>
-          <li>
+          <li class="contacts-item">
             <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
           </li>
         </ul>
       </div>
     </header>
 
-    <main>
-      <section class="portfolio">
+    <main class="portfolio">
+      <section class="container">
         <!-- Скрытый заголовок -->
-        <h1>Примеры проектов</h1>
-        <ul class="list">
-          <li><button class="button curent" type="button">Все</button></li>
-          <li><button class="button" type="button">Веб-сайты</button></li>
-          <li><button class="button" type="button">Приложения</button></li>
-          <li><button class="button" type="button">Дизайн</button></li>
-          <li><button class="button" type="button">Маркетинг</button></li>
+        <h1 class="hidden-title">Примеры проектов</h1>
+        <ul class="list filters">
+          <li class="filters-item">
+            <button class="button curent" type="button">Все</button>
+          </li>
+          <li class="filters-item">
+            <button class="button" type="button">Веб-сайты</button>
+          </li>
+          <li class="filters-item">
+            <button class="button" type="button">Приложения</button>
+          </li>
+          <li class="filters-item">
+            <button class="button" type="button">Дизайн</button>
+          </li>
+          <li class="filters-item">
+            <button class="button" type="button">Маркетинг</button>
+          </li>
         </ul>
 
-        <ul class="list">
-          <li>
+        <ul class="list cards-list">
+          <li class="card">
             <a class="link" href="">
               <img
+                class="card-image"
                 src="./images/portfolio-img/techno.jpg"
                 alt="Страница веб-сайта на экране ноутбука"
                 width="370"
                 height="294"
               />
               <h2 class="list-title">Технокряк</h2>
-              <p>Веб-сайт</p>
+              <p class="description">Веб-сайт</p>
               <p class="alt-text">
                 Технокряк это современная площадка распространения коронавируса.
                 Компании используют эту платформу для цифрового шпионажа и атак
@@ -81,139 +92,155 @@
               </p>
             </a>
           </li>
-          <li>
+          <li class="card">
             <a class="link" href="">
               <img
+                class="card-image"
                 src="./images/portfolio-img/poster.jpg"
                 alt="Постер с двумя баскетболистами New Orlean vs Golden Star"
                 width="370"
                 height="294"
               />
               <h2 class="list-title">Постер New Orlean vs Golden Star</h2>
-              <p>Дизайн</p>
+              <p class="description">Дизайн</p>
               <p class="alt-text">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Architecto, molestiae aliquam. Tempore voluptatem id suscipit.
-                Hic vel consequuntur voluptates dolor.
+                Hic vel consequuntur voluptates dolor. Lorem ipsum dolor sit
+                amet.
               </p>
             </a>
           </li>
-          <li>
+          <li class="card">
             <a class="link" href="">
               <img
+                class="card-image"
                 src="./images/portfolio-img/seafood.jpg"
                 alt="Логотип ресторана Seafood"
                 width="370"
                 height="294"
               />
               <h2 class="list-title">Ресторан Seafood</h2>
-              <p>Приложение</p>
+              <p class="description">Приложение</p>
               <p class="alt-text">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Architecto, molestiae aliquam. Tempore voluptatem id suscipit.
-                Hic vel consequuntur voluptates dolor.
+                Hic vel consequuntur voluptates dolor. Lorem ipsum dolor sit
+                amet.
               </p>
             </a>
           </li>
-          <li>
+          <li class="card">
             <a class="link" href="">
               <img
+                class="card-image"
                 src="./images/portfolio-img/prime.jpg"
                 alt="Большие черные беспроводные наушники"
                 width="370"
                 height="294"
               />
               <h2 class="list-title">Проект Prime</h2>
-              <p>Маркетинг</p>
+              <p class="description">Маркетинг</p>
               <p class="alt-text">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Architecto, molestiae aliquam. Tempore voluptatem id suscipit.
-                Hic vel consequuntur voluptates dolor.
+                Hic vel consequuntur voluptates dolor. Lorem ipsum dolor sit
+                amet.
               </p>
             </a>
           </li>
-          <li>
+          <li class="card">
             <a class="link" href="">
               <img
+                class="card-image"
                 src="./images/portfolio-img/boxes.jpg"
                 alt="Две маленькие фирменные коробки на белом фоне"
                 width="370"
                 height="294"
               />
               <h2 class="list-title">Проект Boxes</h2>
-              <p>Приложение</p>
+              <p class="description">Приложение</p>
               <p class="alt-text">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Architecto, molestiae aliquam. Tempore voluptatem id suscipit.
-                Hic vel consequuntur voluptates dolor.
+                Hic vel consequuntur voluptates dolor. Lorem ipsum dolor sit
+                amet.
               </p>
             </a>
           </li>
-          <li>
+          <li class="card">
             <a class="link" href="">
               <img
+                class="card-image"
                 src="./images/portfolio-img/inspiration.jpg"
                 alt="Дизайн сайта на экране монитора"
                 width="370"
                 height="294"
               />
               <h2 class="list-title">Inspiration has no Borders</h2>
-              <p>Веб-сайт</p>
+              <p class="description">Веб-сайт</p>
               <p class="alt-text">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Architecto, molestiae aliquam. Tempore voluptatem id suscipit.
-                Hic vel consequuntur voluptates dolor.
+                Hic vel consequuntur voluptates dolor. Lorem ipsum dolor sit
+                amet.
               </p>
             </a>
           </li>
-          <li>
+          <li class="card">
             <a class="link" href="">
               <img
+                class="card-image"
                 src="./images/portfolio-img/limited-edition.jpg"
                 alt="Открытый глянцевый журнал"
                 width="370"
                 height="294"
               />
               <h2 class="list-title">Издание Limited Edition</h2>
-              <p>Дизайн</p>
+              <p class="description">Дизайн</p>
               <p class="alt-text">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Architecto, molestiae aliquam. Tempore voluptatem id suscipit.
-                Hic vel consequuntur voluptates dolor.
+                Hic vel consequuntur voluptates dolor. Lorem ipsum dolor sit
+                amet.
               </p>
             </a>
           </li>
-          <li>
+          <li class="card">
             <a class="link" href="">
               <img
+                class="card-image"
                 src="./images/portfolio-img/lab.jpg"
                 alt="Картонная бирка PSD MockUp"
                 width="370"
                 height="294"
               />
               <h2 class="list-title">Проект LAB</h2>
-              <p>Маркетинг</p>
+              <p class="description">Маркетинг</p>
               <p class="alt-text">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Architecto, molestiae aliquam. Tempore voluptatem id suscipit.
-                Hic vel consequuntur voluptates dolor.
+                Hic vel consequuntur voluptates dolor. Lorem ipsum dolor sit
+                amet.
               </p>
             </a>
           </li>
-          <li>
+          <li class="card">
             <a class="link" href="">
               <img
+                class="card-image"
                 src="./images/portfolio-img/business.jpg"
                 alt="Руки работающие за ноутбуком"
                 width="370"
                 height="294"
               />
               <h2 class="list-title">Growing Business</h2>
-              <p>Приложение</p>
+              <p class="description">Приложение</p>
               <p class="alt-text">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Architecto, molestiae aliquam. Tempore voluptatem id suscipit.
-                Hic vel consequuntur voluptates dolor.
+                Hic vel consequuntur voluptates dolor. Lorem ipsum dolor sit
+                amet.
               </p>
             </a>
           </li>
@@ -222,34 +249,66 @@
     </main>
 
     <footer class="footer">
-      <!-- Логотип -->
-      <a class="logo" href="./index.html" lang="en"
-        >Web
-        <span class="footer-logo">Studio</span>
-      </a>
+      <div class="container flex-container">
+        <div class="address-container">
+          <!-- Логотип -->
+          <a class="logo" href="./index.html" lang="en"
+            >Web
+            <span class="footer-logo">Studio</span>
+          </a>
 
-      <address>
-        г. Киев, пр-т Леси Украинки, 26 <br />
-        <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-        <br />
-        <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
-      </address>
+          <address>
+            г. Киев, пр-т Леси Украинки, 26 <br />
+            <a class="link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+            <br />
+            <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
+          </address>
+        </div>
 
-      <b>присоединяйтесь</b>
-      <ul class="list">
-        <li>
-          <a class="link" href="" aria-label="Ссылка на Instagram">Instagram</a>
-        </li>
-        <li>
-          <a class="link" href="" aria-label="Ссылка на Twitter">Twitter</a>
-        </li>
-        <li>
-          <a class="link" href="" aria-label="Ссылка на Facebook">Facebook</a>
-        </li>
-        <li>
-          <a class="link" href="" aria-label="Ссылка на LinkedIn">LinkedIn</a>
-        </li>
-      </ul>
+        <div class="social">
+          <p class="subtitle"><b>присоединяйтесь</b></p>
+          <ul class="list social-links-list">
+            <li>
+              <a
+                class="link social-links"
+                href=""
+                aria-label="Ссылка на Instagram"
+                >I</a
+              >
+            </li>
+            <li>
+              <a
+                class="link social-links"
+                href=""
+                aria-label="Ссылка на Twitter"
+                >T</a
+              >
+            </li>
+            <li>
+              <a
+                class="link social-links"
+                href=""
+                aria-label="Ссылка на Facebook"
+                >F</a
+              >
+            </li>
+            <li>
+              <a
+                class="link social-links"
+                href=""
+                aria-label="Ссылка на LinkedIn"
+                >L</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="mailing">
+          <p class="subtitle"><b>Подпишитесь на рассылку</b></p>
+        </div>
+      </div>
 
       <p class="copyright">2020 &#124; Developed by GoIT Students</p>
     </footer>
