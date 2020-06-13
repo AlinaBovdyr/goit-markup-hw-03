@@ -38,7 +38,7 @@ a {
   padding-left: 15px;
   padding-right: 15px;
 
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
 }
 
 .container.main {
@@ -51,6 +51,7 @@ a {
   margin-right: 85px;
 
   color: var(--accent-color);
+
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -95,6 +96,7 @@ a {
 
 .link {
   color: var(--primary-title-color);
+
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -118,25 +120,28 @@ a {
 
 /* Герой */
 .hero {
-  text-align: center;
   background-color: rgba(47, 48, 58, 0.8);
+
+  text-align: center;
 }
 
 .contrast-title {
-  color: var(--contrast-title-color);
-  text-align: center;
-  text-transform: uppercase;
-
   margin-top: 0;
   margin-bottom: 0;
+
+  color: var(--contrast-title-color);
+
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .hero-title {
+  margin-bottom: 30px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
-  margin-bottom: 30px;
 }
 
 .hero-btn {
@@ -147,17 +152,18 @@ a {
 
   color: var(--contrast-title-color);
   background-color: var(--accent-color);
+
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  text-align: center;
   letter-spacing: 0.06em;
+  text-align: center;
 }
 
 /* Особенности */
 .hidden-title {
-  display: none;
   margin: 0;
+  display: none;
 }
 
 .feature-list {
@@ -172,28 +178,30 @@ a {
 .feature-image {
   margin-bottom: 30px;
   padding: 25px 100px;
+
   background-color: var(--secondary-background-color);
 }
 
 .features .primary-title {
+  margin-top: 0;
+  margin-bottom: 10px;
+
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
   text-align: left;
-
-  margin-top: 0;
-  margin-bottom: 10px;
 }
 
 .primary-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+
   color: var(--primary-title-color);
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
-
-  margin-top: 0;
-  margin-bottom: 50px;
 }
 
 .features .text {
@@ -214,21 +222,23 @@ a {
 .activity .contrast-title {
   padding: 27px 82px;
 
+  background-color: rgba(47, 48, 58, 0.8);
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  background-color: rgba(47, 48, 58, 0.8);
 }
 
 /* Наша команда */
 .team {
-  background-color: #f5f4fa;
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  background-color: var(--secondary-background-color);
+
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .team .container {
@@ -239,7 +249,7 @@ a {
 }
 
 .team-item {
-  background-color: #ffffff;
+  background-color: var(--contrast-title-color);
 
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 1px 3px rgba(0, 0, 0, 0.12);
@@ -251,12 +261,12 @@ a {
 }
 
 .team .member {
+  margin-top: 0;
+  margin-bottom: 10px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-
-  margin-top: 0;
-  margin-bottom: 10px;
 }
 
 .profession {
@@ -353,6 +363,7 @@ address {
   margin-top: 9px;
 
   color: rgba(255, 255, 255, 0.6);
+
   font-weight: 400;
   line-height: 1.71;
 }
@@ -378,6 +389,7 @@ address {
 .social-links-list .link {
   margin-top: 0;
   margin-right: 10px;
+
   background-color: rgba(255, 255, 255, 0.1);
 }
 
@@ -393,6 +405,7 @@ address {
   padding-bottom: 21px;
 
   color: rgba(255, 255, 255, 0.4);
+
   font-size: 12px;
   line-height: 2;
   text-align: center;
@@ -426,15 +439,19 @@ address {
   letter-spacing: 0.03em;
 }
 
+.portfolio .link {
+  display: block;
+}
+
 .button {
   padding: 6px 22px;
+  border: transparent;
+  border-radius: 4px;
 
   color: var(--primary-title-color);
   background-color: var(--secondary-background-color);
-  font-weight: 500;
 
-  border: transparent;
-  border-radius: 4px;
+  font-weight: 500;
 }
 
 .filters-item + .filters-item {
@@ -466,12 +483,13 @@ address {
 
 .portfolio .link {
   color: var(--primary-text-color);
+
   font-weight: 400;
   line-height: 1.88;
 }
 
-.card-image {
-  margin-bottom: 20px;
+.image-description {
+  margin: 20px 24px;
 }
 
 .list-title {
@@ -479,6 +497,7 @@ address {
   margin-bottom: 4px;
 
   color: var(--primary-title-color);
+
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -486,8 +505,7 @@ address {
 }
 
 .description {
-  margin-top: 0;
-  margin-bottom: 20px;
+  margin: 0;
 }
 
 .alt-text {
@@ -496,6 +514,7 @@ address {
 
   color: var(--contrast-title-color);
   background-color: rgba(33, 150, 243, 0.9);
+
   font-size: 18px;
   line-height: 1.56;
 }
