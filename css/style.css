@@ -42,8 +42,8 @@ a {
 }
 
 .container.main {
-  margin-top: 94px;
-  margin-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 /* Логотип */
@@ -209,6 +209,10 @@ a {
 }
 
 /* Чем мы занимаемся */
+.activity .container {
+  padding-bottom: 94px;
+}
+
 .activity-list {
   display: flex;
   justify-content: space-between;
@@ -333,6 +337,13 @@ a {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+.address {
+  display: flex;
+  flex-direction: column;
+
+  font-style: normal;
+}
+
 .flex-container {
   display: flex;
   justify-content: space-between;
@@ -352,10 +363,6 @@ a {
 .footer .logo {
   display: inline-block;
   margin-bottom: 8px;
-}
-
-address {
-  font-style: normal;
 }
 
 .footer .link {
@@ -419,8 +426,8 @@ address {
 }
 
 .portfolio .container {
-  margin-top: 93px;
-  margin-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .filters {
