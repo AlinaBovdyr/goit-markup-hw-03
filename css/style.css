@@ -282,9 +282,9 @@ a {
   display: flex;
   justify-content: space-between;
 
-  margin-left: 32px;
-  margin-right: 32px;
-  margin-bottom: 24px;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-bottom: 24px;
 }
 
 .social-links {
@@ -490,6 +490,8 @@ a {
 
 .card img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .portfolio .link {
@@ -500,7 +502,7 @@ a {
 }
 
 .image-description {
-  margin: 20px 24px;
+  padding: 20px 24px;
 }
 
 .list-title {
