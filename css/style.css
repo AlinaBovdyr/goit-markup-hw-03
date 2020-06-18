@@ -46,6 +46,17 @@ a {
   padding-bottom: 94px;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /* Логотип */
 .logo {
   margin-right: 85px;
@@ -161,11 +172,6 @@ a {
 }
 
 /* Особенности */
-.hidden-title {
-  margin: 0;
-  display: none;
-}
-
 .feature-list {
   display: flex;
   justify-content: space-between;
@@ -390,6 +396,7 @@ a {
 
 .social .social-links-list {
   margin: 0px;
+  padding: 0;
   justify-content: flex-start;
 }
 
@@ -480,8 +487,6 @@ a {
 
 .card {
   width: calc((100% - 2 * 30px) / 3);
-
-  border: 1px solid #eeeeee;
 }
 
 .card:not(:nth-last-child(-n + 3)) {
@@ -503,6 +508,10 @@ a {
 
 .image-description {
   padding: 20px 24px;
+
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
 }
 
 .list-title {
