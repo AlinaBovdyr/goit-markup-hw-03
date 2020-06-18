@@ -117,7 +117,9 @@ a {
 .site-nav .link:focus,
 .contacts .link:hover,
 .contacts .link:focus,
-.site-nav .curent {
+.site-nav .curentб,
+.logo > :hover,
+.logo > :focus {
   color: var(--accent-color);
 }
 
