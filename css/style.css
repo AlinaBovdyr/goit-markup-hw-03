@@ -117,7 +117,7 @@ a {
 .site-nav .link:focus,
 .contacts .link:hover,
 .contacts .link:focus,
-.site-nav .curentб,
+.site-nav .curent,
 .logo > :hover,
 .logo > :focus {
   color: var(--accent-color);
@@ -243,9 +243,6 @@ a {
 
 /* Наша команда */
 .team {
-  padding-top: 94px;
-  padding-bottom: 94px;
-
   background-color: var(--secondary-background-color);
 
   font-size: 16px;
@@ -253,7 +250,7 @@ a {
   text-align: center;
 }
 
-.team .container {
+.team-list {
   display: flex;
   justify-content: space-between;
 
