@@ -149,6 +149,9 @@ a {
 }
 
 .hero-title {
+  width: 630px;
+  margin-right: auto;
+  margin-left: auto;
   margin-bottom: 30px;
 
   font-weight: 900;
@@ -170,7 +173,6 @@ a {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  text-align: center;
 }
 
 /* Особенности */
@@ -266,7 +268,11 @@ a {
 }
 
 .photo {
-  margin-bottom: 30px;
+  display: block;
+}
+
+.member-profile {
+  padding: 30px 32px 24px;
 }
 
 .team .member {
@@ -285,11 +291,11 @@ a {
 
 .social-links-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+}
 
-  padding-left: 32px;
-  padding-right: 32px;
-  padding-bottom: 24px;
+.social-links-item + .social-links-item {
+  margin-left: 10px;
 }
 
 .social-links {
@@ -335,39 +341,30 @@ a {
   color: var(--contrast-title-color);
 }
 
-.footer .container {
-  padding-top: 45px;
-  padding-bottom: 28px;
+.flex-container {
+  padding-top: 60px;
+  padding-bottom: 60px;
 
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: baseline;
 }
 
 .address {
+  margin-right: 69px;
+
   display: flex;
   flex-direction: column;
 
   font-style: normal;
 }
 
-.flex-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-}
-
-.flex-container .address-container,
-.flex-container .social {
-  width: calc((100% - 60px) / 3);
-  margin-right: 30px;
-}
-
-.flex-container .mailing {
-  width: calc((100% - 60px) * 2 / 3);
+.social {
+  margin-right: 94px;
 }
 
 .footer .logo {
   display: inline-block;
-  margin-bottom: 8px;
+  margin-bottom: 20px;
 }
 
 .footer .link {
@@ -393,16 +390,10 @@ a {
   text-transform: uppercase;
 }
 
-.social .social-links-list {
-  margin: 0px;
-  padding: 0;
-  justify-content: flex-start;
-}
-
-.social-links-list .link {
+.social .social-links {
   margin-top: 0;
-  margin-right: 10px;
 
+  color: var(--contrast-title-color);
   background-color: rgba(255, 255, 255, 0.1);
 }
 
@@ -412,7 +403,7 @@ a {
   background-color: var(--accent-color);
 }
 
-.copyright {
+/* .copyright {
   margin: 0;
   padding-top: 18px;
   padding-bottom: 21px;
@@ -422,7 +413,7 @@ a {
   font-size: 12px;
   line-height: 2;
   text-align: center;
-}
+} */
 
 /* 
 Основной контент страницы Портфолио 
